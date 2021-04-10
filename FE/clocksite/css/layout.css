@@ -1,0 +1,86 @@
+		@charset "utf-8";
+		@import url(https://fonts.googleapis.com/css?family=Righteous);
+		
+		*{margin:0; padding:0;}
+		ol,ul{ list-style:none;}
+		a {outline:0; text-decoration:none; color:#404040;}
+		img {border:0; vertical-align:top;}
+		body {font-size:12px; font-family:'Righteous';
+			height:100%;}
+		
+/*로고*/
+h1{position:fixed; top:50px; left:50px; z-index:10;}
+h1 img{width:200px; height:auto; /*높이값을 인식시키기위해*/}
+
+/*sns*/
+#sns{position:fixed; top:40px; right:50px; z-index:14;}
+#sns li{float:left; margin-left:20px;}
+#sns li i{
+	font-size:25px; color:#111; opacity:0.5; transition:all 0.5s;
+	/*트렌지션이 들어갔네요. 결과(hover)값이 있겠죠?*/
+}
+#sns li i:hover{
+	transform:scale(1.5); opacity:1;
+}
+
+/*메뉴*/
+#menu{position:fixed; top:50%; left:0px; margin-top:-100px; z-index:13;}
+#menu a{
+	display:block; width:200px; height:60px; font-family:'righteous';
+	font-size:14px; color:#000; text-align:center;
+	overflow:hidden; box-sizing:border-box; border-top:1px solid #111;
+	opacity:0.8; transition:all 0.5s;
+} 
+#menu li:hover a{font-size:24px; opacity:1;}
+
+/*공통속성*/
+#menu li.on a{font-size:24px; opacity:1;}
+
+#menu li:nth-child(1).on a{color:#d4164c; border-color:#d4164c;}
+#menu li:nth-child(2).on a{color:#fff; border-color:#fff;}
+#menu li:nth-child(3).on a{color:#ffec6a; border-color:#ffec6a;}
+#menu li:nth-child(4).on a{color:#005a89; border-color:#005a89;}
+
+/*호버했을때*/
+#menu li:nth-child(1):hover a{color:#d4164c; border-color:#d4164c;}
+#menu li:nth-child(2):hover a{color:#fff; border-color:#fff;}
+#menu li:nth-child(3):hover a{color:#ffec6a; border-color:#ffec6a;}
+#menu li:nth-child(4):hover a{color:#005a89; border-color:#005a89;}
+
+/*레이아웃*/
+#wrap{width:100%; height:100%; position:relative; overflow:hidden;}
+
+.back{width:100%; height:400%;position:relative;}
+section{
+	width:100%; height:25%; background-size:cover; 
+	background-position:right center; 
+	background-attachment:fixed; /*scroll, fixed*/
+}
+
+/*독립적인 디자인*/
+section:nth-child(1){background-image:url(../img/swatch1.jpg);}
+section:nth-child(2){background-image:url(../img/swatch2.jpg);}
+section:nth-child(3){background-image:url(../img/swatch3.jpg);}
+section:nth-child(4){background-image:url(../img/swatch4.jpg);}
+
+/*텍스트 박스*/
+article{position:relative; top:400px; left:300px;}
+article p{
+font-size:50px; font-family:'righteous'; 
+letter-spacing:2px; line-height:1; /*100%*/
+text-shadow:1px 1px 0px #222; /*h축 v축 blur spred color inset(안쪽그림자)*/
+}
+article span{font-size:16px;}
+
+section:nth-child(1) p{color:#d4164c;}
+section:nth-child(1) span{color:#111;}
+
+section:nth-child(2) p{color:#fff;}
+section:nth-child(2) span{color:#000;}
+
+section:nth-child(3) p{color:#fff;}
+section:nth-child(3) span{color:#ffec6a}
+
+section:nth-chlid(4) p{color:#005a89;}
+section:nth-chlid(4) span{color:#111;}
+

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <style>
+	*{margin:0;padding:0;}
+	.btn,.mix_wrap{width:80%;
+					margin:0 auto;}
+
+	.mix{width:23.7%;
+		 height:200px;
+		 margin-left:1%;
+		 margin-top:1%;
+		 background-color:#ddd;
+		 display:inline-block;
+		 text-align:center;}
+	.mix h4,.mix span{position:relative;
+					  top:80px;}
+	button{width:100px;
+			height:40px;
+			margin:10px;}
+	
+	.orange{background-color:orange;}
+	.green{background-color:green; color:#fff;}
+	.pink{background-color:pink;}
+	.black{background-color:black; color:#fff;}
+	.skyblue{background-color:skyblue;}
+  </style>
+
+
+  <script src="js/jquery-3.5.1.js" type="text/javascript" text="javascript"></script>
+  <script src="js/mixitup.min.js" type="text/javascript" text="javascript"></script>
+  <script>
+	$(function(){
+		var mixer = mixitup(".mix_wrap",{
+			"animation":{
+				"duration" : 250,
+				"nudge" : false,
+				"reverseOut":false,
+				"effects" : "fade translateX(20%) stagger(100ms)"
+			}
+		});
+
+		//filter
+		$("#filter").change(function(){
+			var $val = $(this).val();
+
+			mixer.filter($val)
+		});
+
+		//sort
+		$("#sort").change(function(){
+			var $val = $(this).val();
+
+			mixer.sort($val);
+		
+		});
+		
+	});
+  </script>
+ </head>
+ <body>
+  <div class="btn">
+	<button type="button" data-filter="all">ALL</button>
+	<button type="button" data-filter=".orange">orange</button>
+	<button type="button" data-filter=".green">green</button>
+	<button type="button" data-filter=".pink">pink</button>
+	<button type="button" data-filter=".black">black</button>
+	<button type="button" data-filter=".skyblue">skyblue</button>
+	<hr />
+
+	<button type="button" data-sort="order:asc">Ascending</button>
+	<button type="button" data-sort="order:descending">Descending</button>
+	<button type="button" data-sort="order:random">Random</button>
+	<hr />
+
+	<label for="">Filter</label>
+	<select name="" id="filter">
+		<option value="all">All</option>
+		<option value=".orange">orange</option>
+		<option value=".green">green</option>
+		<option value=".pink">pink</option>
+		<option value=".black">black</option>
+		<option value=".skyblue">skyblue</option>
+	</select>
+
+	<label for="">Sort</label>
+	<select name="" id="sort">
+		<option value="order:asc">Ascending</option>
+		<option value="order:descending">Descending</option>
+		<option value="order:random">Random</option>
+	</select>
+  </div>
+  
+   <div class="mix_wrap">
+  	<div class="mix orange" data-order="1">
+		<h4>BOX1</h4>
+		<span>orange</span>
+	</div>
+
+	<div class="mix orange" data-order="2">
+		<h4>BOX2</h4>
+		<span>orange</span>
+	</div>
+
+	<div class="mix green" data-order="3">
+		<h4>BOX3</h4>
+		<span>green</span>
+	</div>
+
+	<div class="mix pink" data-order="4">
+		<h4>BOX4</h4>
+		<span>pink</span>
+	</div>
+
+	<div class="mix green" data-order="5">
+		<h4>BOX5</h4>
+		<span>green</span>
+	</div>
+
+	<div class="mix pink" data-order="6">
+		<h4>BOX6</h4>
+		<span>pink</span>
+	</div>
+
+	<div class="mix orange" data-order="7">
+		<h4>BOX7</h4>
+		<span>orange</span>
+	</div>
+
+	<div class="mix skyblue" data-order="8">
+		<h4>BOX8</h4>
+		<span>skyblue</span>
+	</div>
+
+	<div class="mix black" data-order="9">
+		<h4>BOX9</h4>
+		<span>black</span>
+	</div>
+
+	<div class="mix pink" data-order="10">
+		<h4>BOX10</h4>
+		<span>pink</span>
+	</div>
+
+	<div class="mix black" data-order="11">
+		<h4>BOX11</h4>
+		<span>black</span>
+	</div>
+
+	<div class="mix black" data-order="12">
+		<h4>BOX12</h4>
+		<span>black</span>
+	</div>
+
+	<div class="mix green" data-order="13">
+		<h4>BOX13</h4>
+		<span>green</span>
+	</div>
+
+	<div class="mix black" data-order="14">
+		<h4>BOX14</h4>
+		<span>black</span>
+	</div>
+
+	<div class="mix skyblue" data-order="15">
+		<h4>BOX15</h4>
+		<span>skyblue</span>
+	</div>
+
+	<div class="mix skyblue" data-order="16">
+		<h4>BOX16</h4>
+		<span>skyblue</span>
+	</div>
+
+	<div class="mix orange" data-order="17">
+		<h4>BOX17</h4>
+		<span>orange</span>
+	</div>
+  </div>
+
+ </body>
+</html>
