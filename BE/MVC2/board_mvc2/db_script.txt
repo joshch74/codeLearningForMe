@@ -1,0 +1,13 @@
+CREATE TABLE TBL_MEMBER(
+	userid VARCHAR2(100) PRIMARY KEY,
+	userpw VARCHAR2(100),
+	username VARCHAR2(100),
+	usergender VARCHAR2(100),
+	userphone VARCHAR2(100),
+	userpostcode VARCHAR2(100),
+	useraddr  VARCHAR2(300),
+	useraddrdetail VARCHAR2(300),
+	useraddretc VARCHAR2(300)
+);
+DROP TABLE TBL_MEMBER;
+SELECT * FROM TBL_MEMBER;
