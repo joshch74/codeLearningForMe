@@ -8,22 +8,21 @@
 		body {font-size:12px; font-family:'Righteous';
 			height:100%;}
 		
-/*·Î°í*/
+/*ë¡œê³ */
 h1{position:fixed; top:50px; left:50px; z-index:10;}
-h1 img{width:200px; height:auto; /*³ôÀÌ°ªÀ» ÀÎ½Ä½ÃÅ°±âÀ§ÇØ*/}
+h1 img{width:200px; height:auto;}
 
 /*sns*/
 #sns{position:fixed; top:40px; right:50px; z-index:14;}
 #sns li{float:left; margin-left:20px;}
 #sns li i{
 	font-size:25px; color:#111; opacity:0.5; transition:all 0.5s;
-	/*Æ®·»Áö¼ÇÀÌ µé¾î°¬³×¿ä. °á°ú(hover)°ªÀÌ ÀÖ°ÚÁÒ?*/
 }
 #sns li i:hover{
 	transform:scale(1.5); opacity:1;
 }
 
-/*¸Ş´º*/
+/*ë©”ë‰´*/
 #menu{position:fixed; top:50%; left:0px; margin-top:-100px; z-index:13;}
 #menu a{
 	display:block; width:200px; height:60px; font-family:'righteous';
@@ -33,7 +32,7 @@ h1 img{width:200px; height:auto; /*³ôÀÌ°ªÀ» ÀÎ½Ä½ÃÅ°±âÀ§ÇØ*/}
 } 
 #menu li:hover a{font-size:24px; opacity:1;}
 
-/*°øÅë¼Ó¼º*/
+/*ê³µí†µì†ì„±*/
 #menu li.on a{font-size:24px; opacity:1;}
 
 #menu li:nth-child(1).on a{color:#d4164c; border-color:#d4164c;}
@@ -41,13 +40,13 @@ h1 img{width:200px; height:auto; /*³ôÀÌ°ªÀ» ÀÎ½Ä½ÃÅ°±âÀ§ÇØ*/}
 #menu li:nth-child(3).on a{color:#ffec6a; border-color:#ffec6a;}
 #menu li:nth-child(4).on a{color:#005a89; border-color:#005a89;}
 
-/*È£¹öÇßÀ»¶§*/
+/*í˜¸ë²„í–ˆì„ë•Œ*/
 #menu li:nth-child(1):hover a{color:#d4164c; border-color:#d4164c;}
 #menu li:nth-child(2):hover a{color:#fff; border-color:#fff;}
 #menu li:nth-child(3):hover a{color:#ffec6a; border-color:#ffec6a;}
 #menu li:nth-child(4):hover a{color:#005a89; border-color:#005a89;}
 
-/*·¹ÀÌ¾Æ¿ô*/
+/*ë ˆì´ì•„ì›ƒ*/
 #wrap{width:100%; height:100%; position:relative; overflow:hidden;}
 
 .back{width:100%; height:400%;position:relative;}
@@ -57,18 +56,18 @@ section{
 	background-attachment:fixed; /*scroll, fixed*/
 }
 
-/*µ¶¸³ÀûÀÎ µğÀÚÀÎ*/
+/*ë…ë¦½ì ì¸ ë””ìì¸*/
 section:nth-child(1){background-image:url(../img/swatch1.jpg);}
 section:nth-child(2){background-image:url(../img/swatch2.jpg);}
 section:nth-child(3){background-image:url(../img/swatch3.jpg);}
 section:nth-child(4){background-image:url(../img/swatch4.jpg);}
 
-/*ÅØ½ºÆ® ¹Ú½º*/
+/*í…ìŠ¤íŠ¸ ë°•ìŠ¤*/
 article{position:relative; top:400px; left:300px;}
 article p{
 font-size:50px; font-family:'righteous'; 
-letter-spacing:2px; line-height:1; /*100%*/
-text-shadow:1px 1px 0px #222; /*hÃà vÃà blur spred color inset(¾ÈÂÊ±×¸²ÀÚ)*/
+letter-spacing:2px; line-height:1; 
+text-shadow:1px 1px 0px #222; 
 }
 article span{font-size:16px;}
 
