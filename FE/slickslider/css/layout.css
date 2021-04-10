@@ -1,17 +1,5 @@
 *{margin:0;padding:0;}
 
-/* 기본슬라이드 */
-/* .main{width:600px;}
-.main div{width:600px;}
-.main div img{width:100%;} */
-
-/* 썸네일 */
-/* img{width:100%;}
-.main_photo,.sub_photo{width:600px;
-						margin:0 auto;}
-
-.sub_photo{margin-top:40px;}
-.sub_photo div{padding:10px;} */
 
  img{width:100%;}
 .main_photo,.sub_photo{width:600px;margin:0 auto;}
